@@ -50,6 +50,10 @@ li{
  box-shadow: 0 0 40px var(--Primary-color);
  border-radius: 0 0 40px 40px;
 }
+.anuncio-bg{
+    filter: brightness(80%); /* escurecer a imagem*/
+    
+}
 
 .anuncio-bg{
  display: flex;
