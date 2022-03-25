@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: var(--bg-color);
+}
 
 :root{
     --Primary-color:#282c34;
     --secund-color:#20232a;
     --third-color:#61dafb;
     --white-color:#fff;
+    --bg-color:#F2F3F4;
     --sneakers-color:rgb(243, 49, 49);
 }
 
@@ -48,11 +52,10 @@ li{
  background-position:  center;
  background-size: cover;
  box-shadow: 0 0 40px var(--Primary-color);
- border-radius: 0 0 40px 40px;
+ border-radius: 0 0 20px 20px;
 }
 .anuncio-bg{
     filter: brightness(80%); /* escurecer a imagem*/
-    
 }
 
 .anuncio-bg{
@@ -77,10 +80,34 @@ color: white;
     font-size: 40px;
 }
 
-.teste{
-    background: var(--white-color);
-    height: 100vh;
+.grid-bg{ /*recebe grid*/
+    display: grid;
+    margin:0 auto;
+    margin-top: 50px;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+   padding: 25px;
+    overflow-x:auto;
 }
 
-
+ .produtos-bg{ /* recebge o flex*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: var(--white-color);
+     width: 15rem;
+     height: 20rem;
+     border-radius: 3px;
+ }
+ .produtos-bg:hover{
+     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+     transform: scale(1.05);
+     transition: all ease-in-out 0.3s;
+     }
+ 
+ .jordan img{
+     width: 250px;
+     margin-bottom: 50px;
+     padding: 7px;
+ }
 
